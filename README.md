@@ -21,9 +21,15 @@ Una banda sobre el prompt de Claude Code que te dice, de un vistazo, **cuánto c
 
 Es una carpeta: no hace falta instalar nada más.
 
-1. Copia esta carpeta a `~/.claude/skills/context-meter/`
-   (en Windows: `C:\Users\<tu usuario>\.claude\skills\context-meter\`).
-2. Abre una sesión nueva de Claude Code. La banda aparece sola.
+```sh
+git clone https://github.com/Penedodp/context-meter ~/.claude/skills/context-meter
+```
+
+(en Windows, la carpeta de destino es `C:\Users\<tu usuario>\.claude\skills\context-meter\`; también sirve descargar el zip y copiarla ahí.)
+
+Después abre una sesión nueva de Claude Code. La banda aparece sola.
+
+Para actualizar más adelante: `git pull` dentro de esa carpeta.
 
 Probado con Claude Code 2.1.291 en terminal.
 
@@ -68,6 +74,10 @@ Tras editar, escribe `/reload-plugins` o abre una sesión nueva.
 - Si el terminal es estrecho, las categorías se recortan por la derecha (primero `Memory` y `MCP`).
 - El desglose por categorías son estimaciones del propio Claude Code, igual que `/context`.
 
+## Licencia
+
+[MIT](LICENSE) © Penedo
+
 ## Estructura
 
 ```
@@ -77,6 +87,7 @@ context-meter/
 │   ├── hooks.json               apunta al módulo
 │   └── register.tsx             todo el código
 ├── types/index.d.ts             tipos del estado de la sesión
+├── LICENSE
 └── README.md
 ```
 
