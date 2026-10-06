@@ -1,0 +1,4 @@
+# Los genera Claude Code al cargar el mod; no son del proyecto
+.claude-plugin/types/
+tsconfig.json
+node_modules/

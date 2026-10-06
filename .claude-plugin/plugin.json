@@ -1,0 +1,8 @@
+{
+  "name": "context-meter",
+  "version": "1.0.0",
+  "description": "Banda sobre el prompt de Claude Code con el contexto usado, su reparto por categorías y el gasto de la sesión",
+  "author": { "name": "Penedo" },
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
